@@ -88,7 +88,8 @@ WARNING
     instrument 'ruby.compile' do
       # check for new app at the beginning of the compile
       new_app?
-      asd = gets 'Is ASD? '
+      puts 'ASD= '
+      asd = STDIN.gets.chomp
       puts asd
       Dir.chdir(build_path)
       remove_vendor_bundle
